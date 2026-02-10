@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento Web</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(160, 243, 243);
+        }
+    </style>
 </head>
 
 <body>
@@ -13,11 +19,23 @@
         <span>Introdução a disciplina de Desenvolvimento Web!</span>
         <hr>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">O que é a Web e como ela Funciona</a></li>
+            <li><a href="#">A diferença entre Internet e Web</a></li>
+            <li><a href="#">Arquitetura Básica da Web</a></li>
+            <li><a href="#">Conceitos de requisição e resposta</a></li>
+            <li><a href="#">O papel dos navegadores</a></li>
+        </ul>
+        <hr>
+    </nav>
     <main>
-
+        
         <h2>1. Visão Geral da Web</h2>
 
-        <p>A World Wide Web, frequentemente referida apenas como Web ou WWW, é um dos serviços mais importantes e
+        <h3>1.1. O que é a Web e Como ela Funciona</h3>
+
+        <p>A <ins>World Wide Web</ins>, frequentemente referida apenas como Web ou WWW, é um dos serviços mais importantes e
             populares que operam sobre a infraestrutura da Internet. Embora os termos "Internet" e "Web" sejam
             frequentemente utilizados como sinônimos no dia a dia, eles representam conceitos distintos. A Internet
             refere-se à infraestrutura física de rede global que conecta milhões de dispositivos, enquanto a Web é um
@@ -31,18 +49,13 @@
             <figcaption>Representação da Rede Mundial de Computadores</figcaption>
         </figure>
 
-        <h3>1.1. O que é a Web e Como ela Funciona</h3>
-        <p>
-            Embora os termos "Internet" e "World Wide Web" (ou apenas Web) sejam frequentemente utilizados como
-            sinônimos no vocabulário cotidiano, eles representam conceitos tecnológicos distintos. Para compreender essa
-            diferença, é fundamental entender que um termo refere-se à infraestrutura de conexão global, enquanto o
-            outro refere-se a um sistema específico de acesso à informação que opera sobre essa infraestrutura. A
-            seguir, detalho as características de cada um e como eles se relacionam, baseando-me nos fundamentos
-            técnicos apresentados nas fontes.
-        </p>
+        <p><del>
+            um vasto repositório de informações distribuídas globalmente, onde documentos e recursos são interligados de forma lógica.
+        </del></p>
+
         <h3>1.2. A diferença entre Internet e Web</h3>
         <p>
-            Embora os termos "Internet" e "World Wide Web" (ou apenas Web) sejam frequentemente utilizados como
+            Embora os termos "Internet" e "<mark>World Wide Web</mark>" (ou apenas Web) sejam frequentemente utilizados como
             sinônimos no vocabulário cotidiano, eles representam conceitos tecnológicos distintos. Para compreender essa
             diferença, é fundamental entender que um termo refere-se à infraestrutura de conexão global, enquanto o
             outro refere-se a um sistema específico de acesso à informação que opera sobre essa infraestrutura. A
@@ -91,13 +104,21 @@
             estruturada.
         </p>
 
+        <section>
+            <hr>
+            <form action="get">
+                <label for="email">Deixe seu email para receber informações</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+            </form>
+        </section>
+
     </main>
     <footer>
         <hr>
         <small>
             <p><strong>Intituto Federal de Educação Ciência e Tecnologia do Ceará</strong></p>
             <p>IFCE - <em>Campus</em> Iguatu</p>
-            <p>Paulo Ricardson S. Costa - 2026.1</p>
+            <p>Paulo Ricardson S. Costa<sup>&#174;</sup> - 2026.1</p>
         </small>
     </footer>
 </body>
