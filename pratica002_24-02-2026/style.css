@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Inter", sans-serif;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-tela {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #266AA6, #63CAF2);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login-tela div {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-tela div label {
+    
+}
+
+.login-tela h1 {
+    color: #266AA6;
+}
+.login-tela h1::after {
+    content: "";
+    background-color: #63CAF2;
+    height: 8px;
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin-top: 5px;
+}
+
+.login-tela div input {
+    border-radius: 10px;
+    border: 1px solid #63CAF2;
+    height: 40px;
+}
+
+.btn {
+    background-color: #266AA6;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #63CAF2;
+}
