@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 350px;
+            margin: 120px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2b7cff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Login</h2>
+
+        <form>
+
+            <label>E-mail</label>
+            <input type="email" required>
+
+            <label>Senha</label>
+            <input type="password" minlength="6" required>
+
+            <label>
+                <input type="checkbox">
+                Lembrar-me
+            </label>
+
+            <button type="submit">Entrar</button>
+
+            <a href="cadastro-produto.html">Cadastrar Produto</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
