@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade de Javascript</title>
+</head>
+<body>
+    <h1>O que é o Javascript?</h1>
+    <section class="container">
+        <div class="img">
+
+        </div>
+        <article class="resposta">
+            <h2>Como aconteceu a evolução da tecnologia JavaScript no decorrer dos anos?</h2>
+            <p>
+                A evolução do JavaScript é uma jornada de superação, transformando-se de uma simples ferramenta de scripts criada em apenas dez dias por Brendan Eich, em 1995, no motor que sustenta a internet moderna. Inicialmente limitada a pequenas interações em navegadores, a linguagem enfrentou anos de fragmentação e preconceito até a revolução do AJAX em 2005, que permitiu carregar dados sem atualizar a página, e o surgimento do jQuery, que padronizou o desenvolvimento entre diferentes navegadores. O verdadeiro divisor de águas ocorreu em 2009 com o Node.js, que levou o JavaScript para o lado do servidor, e culminou na grande atualização ES6 em 2015, que trouxe maturidade sintática com classes e módulos. Hoje, impulsionado por ecossistemas robustos como React e TypeScript, o JavaScript evoluiu de um acessório visual para uma linguagem de programação completa, presente em servidores, aplicativos móveis e até inteligência artificial.
+            </p>
+        </article>
+
+        <article class="resposta">
+            <h2>Qual a diferença entre Java e JavaScript?</h2>
+            <p>
+                Apesar da semelhança nos nomes, Java e JavaScript são linguagens completamente distintas em propósito, estrutura e funcionamento, assemelhando-se apenas na sintaxe básica baseada em C. O Java, criado pela Sun Microsystems, é uma linguagem compilada e fortemente tipada que roda dentro de uma Máquina Virtual (JVM), sendo amplamente utilizada em sistemas corporativos robustos, aplicativos Android e servidores de grande porte. Já o JavaScript, criado pela Netscape, é uma linguagem interpretada e de tipagem dinâmica que roda nativamente nos navegadores (e hoje também em servidores via Node.js), focada em criar interatividade e dinamismo em páginas web. Enquanto o Java exige que o código seja transformado em um arquivo executável antes de rodar, o JavaScript é lido e executado linha por linha pelo motor do navegador, tornando-os ferramentas com objetivos técnicos e arquiteturas de execução totalmente diferentes.
+            </p>
+        </article>
+
+        <article class="resposta">
+            <h2>Quais as formas de se trabalhar com JavaScript junto com html. Dê exemplos.</h2>
+            <p>
+                Existem três formas principais de integrar o JavaScript ao HTML, cada uma com um propósito específico dependendo da organização do seu código. A primeira é a Inline, onde o script é inserido diretamente dentro de um atributo de uma tag HTML, como em &lt;button onclick="alert('Oi!')"&gt;, sendo útil apenas para testes rápidos ou comportamentos muito simples, pois dificulta a manutenção. A segunda forma é a Interna, onde o código JavaScript é escrito dentro da tag &lt;script&gt; no próprio arquivo HTML, geralmente antes do fechamento da tag &lt;/body&gt;, o que é prático para páginas únicas que não compartilham lógica com outros arquivos. A terceira e mais recomendada para projetos profissionais é a Externa, onde o código reside em um arquivo separado com a extensão .js e é chamado no HTML através do atributo src, como em &lt;script src="config.js">&lt;/script&gt;, permitindo a reutilização do código em múltiplas páginas e mantendo a estrutura (HTML) separada da lógica (JS).
+            </p>
+            <div class="exemplo">
+                <h3>Exemplo</h3>
+                    <ul>
+                        <li><strong>Inline: </strong>: <code>&lt;button onclick="console.log('Clicou!')"&gt;Botão&lt;/button&gt;</code></li>
+                        <li><strong>Interno: </strong>
+                            <pre>
+                                <code>
+                                    &lt;script&gt;
+                                        const saudacao = "Bem-vindo!";
+                                        console.log(saudacao);
+                                    &lt;/script&gt;
+                                </code>
+                            </pre>
+                        </li>
+                        <li><strong>Externo: </strong><code>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code> (Onde main.js contém apenas o código puro).</li>
+                    </ul>
+            </div>
+        </article>
+
+        <article class="resposta">
+            <h2>Como funciona o processamento do JavaScript em uma página web?</h2>
+            <p>
+                O processamento do JavaScript em uma página web ocorre de forma dinâmica e sequencial através de motores integrados aos navegadores, como o V8 do Google Chrome, que transformam o código escrito em instruções de máquina em tempo real via compilação <em>Just-In-Time</em> (JIT). Assim que o navegador carrega o HTML e constrói o <strong>DOM</strong> (Document Object Model), ele executa o JavaScript para manipular essa estrutura, permitindo alterar textos, cores e comportamentos sem a necessidade de recarregar a página. Todo esse fluxo é gerenciado pelo Event Loop, um mecanismo que permite ao JavaScript lidar com múltiplas interações do usuário e requisições de dados de forma assíncrona, garantindo que a interface permaneça fluida e responsiva enquanto as tarefas pesadas são processadas em segundo plano.
+            </p>
+        </article>
+
+        <article class="resposta">
+            <h2>Qual a importância do JavaScript em um projeto Web?</h2>
+            <p>
+                A importância do JavaScript em um projeto Web moderno é absoluta, pois ele é o único responsável por transformar documentos estático<ul>
+                    <li><strong>Front-end (UI):</strong> 
+                        <em>React</em> (líder de mercado), 
+                        <em>Angular</em> (corporativo/robusto), 
+                        <em>Vue.js</em> (versátil), 
+                        <em>Svelte</em> (focado em compilação) e 
+                        <em>SolidJS</em> (performance reativa).
+                    </li>
+                    
+                    <li><strong>Meta-Frameworks (Full-Stack/SEO):</strong> 
+                        <em>Next.js</em> (padrão para React), 
+                        <em>Nuxt.js</em> (ecossistema Vue), 
+                        <em>Astro</em> (focado em conteúdo/velocidade) e 
+                        <em>Qwik</em> (carregamento instantâneo).
+                    </li>
+                    
+                    <li><strong>Back-end (Servidor):</strong> 
+                        <em>NestJS</em> (arquitetura organizada), 
+                        <em>Express.js</em> (minimalista clássico) e 
+                        <em>Fastify</em> (focado em baixa latência).
+                    </li>
+                </ul>s sem a necessidade de atualizar a página (AJAX). Além disso, sua versatilidade permite que um único ecossistema de código gerencie desde a lógica do navegador (Front-end) até a comunicação com bancos de dados e servidores (Back-end via Node.js), reduzindo custos de desenvolvimento e aumentando a velocidade de entrega. Sem o JavaScript, a web seria limitada a um conjunto de páginas de leitura passiva, impossibilitando a existência de plataformas complexas como redes sociais, editores de documentos online e sistemas de e-commerce que exigem alta performance e feedback visual imediato.
+            </p>
+        </article>
+
+        <article class="resposta">
+            <h2>Pesquise e cite quais frameworks para JavaScript existem atualmente no mercado.</h2>
+            <ul>
+                <li><strong>Front-end (UI):</strong> 
+                    <em>React</em> (líder de mercado), 
+                    <em>Angular</em> (corporativo/robusto), 
+                    <em>Vue.js</em> (versátil), 
+                    <em>Svelte</em> (focado em compilação) e 
+                    <em>SolidJS</em> (performance reativa).
+                </li>
+                
+                <li><strong>Meta-Frameworks (Full-Stack/SEO):</strong> 
+                    <em>Next.js</em> (padrão para React), 
+                    <em>Nuxt.js</em> (ecossistema Vue), 
+                    <em>Astro</em> (focado em conteúdo/velocidade) e 
+                    <em>Qwik</em> (carregamento instantâneo).
+                </li>
+                
+                <li><strong>Back-end (Servidor):</strong> 
+                    <em>NestJS</em> (arquitetura organizada), 
+                    <em>Express.js</em> (minimalista clássico) e 
+                    <em>Fastify</em> (focado em baixa latência).
+                </li>
+            </ul>
+        </article>
+
+    </section>
+    <footer>
+        <p>Desenvolvido por Paulo R S Costa</p>
+    </footer>
+</body>
+</html>

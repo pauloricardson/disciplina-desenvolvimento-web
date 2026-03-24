@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(255, 242, 182);
+}
+
+h1 {
+    background-color: black;
+    padding: 20px;
+    width: 100vw;
+    color: rgb(255, 139, 72);
+    text-align: center;
+    font-size: 2em;
+}
+
+.img {
+    width: 70%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: url(https://www.luiztools.com.br/wp-content/uploads/2018/09/javascript.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.219);
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resposta {
+    max-width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.resposta h2 {
+    color: rgb(187, 55, 3);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.resposta p {
+    font-size: 0.80em;
+    text-align: justify;
+    line-height: 1.75em;
+}
+
+.exemplo {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 202, 186);
+    border-radius: 10px;
+}
+
+.exemplo h3 {
+    color: rgb(230, 95, 42);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    color: rgb(255, 139, 72);
+    text-align: center;
+    margin-top: 10px;
+}
