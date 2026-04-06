@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Temperatura</title>
+    <style>
+        p {
+            color: red;
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            align-items: center;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificar Temperatura</h1>
+
+    <label for="temperatura">Temperatura (°C)</label>
+    <input type="number" name="temperatura" id="temperatura">
+
+    <input type="button" value="Verificar" onclick="verificarTemperatura()">
+
+    <p id="mensagem"></p>
+
+    <script>
+
+        function verificarTemperatura() {
+            let temperatura = document.getElementById("temperatura").value;
+
+            if (temperatura <= 17) {
+                document.getElementById("mensagem").innerText = "Está Frio"
+            } else if (temperatura <= 25) {
+                document.getElementById("mensagem").innerText = "Temperatura Agradável"
+            } else {
+                document.getElementById("mensagem").innerText = "Está Quente"
+            }
+        }
+
+    </script>
+</body>
+</html>

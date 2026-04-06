@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <h2>Login</h2>
+
+    <label for="usuario">Usuario</label>
+    <input type="text" name="usuario" id="usuario">
+
+    <label for="senha"></label>
+    <input type="text" name="senha" id="senha">
+
+    <input type="button" value="Entrar" onclick="validarLogin()">
+
+    <p id="mensagem"></p>
+
+    <script>
+
+        function validarLogin() {
+            let usuario = document.getElementById("usuario").value
+            let senha = document.getElementById("senha").value
+
+            let usuarioCorreto = "paulo";
+            let senhaCorreta = "123";
+
+            if (usuario === usuarioCorreto && senha === senhaCorreta) {
+                document.getElementById("mensagem").innerText = "Acesso permitido"
+            } else {
+                document.getElementById("mensagem").innerText = "Acesso negado"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
