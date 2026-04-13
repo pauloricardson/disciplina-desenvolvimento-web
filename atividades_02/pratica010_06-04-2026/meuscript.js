@@ -4,3 +4,7 @@ function aparecer() {
     document.getElementById("sonserina").style.display = "block";
     document.getElementById("lufalufa").style.display = "block";
 }
+
+function definirCores() {
+    
+}
